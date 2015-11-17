@@ -60,9 +60,10 @@
     "ejs": "^2.3.4",
     "express": "^4.8.8",
     "express-load": "^1.1.15",
-    "jwt-simple": "^0.3.1",
+    "jsonwebtoken": "0.4.0",
     "method-override": "^2.3.5",
     "mongodb": "^2.0.43",
-    "mongoose": "^4.1.8"
+    "mongoose": "^4.1.8",
+    "morgan": "latest"
   }
 }
