@@ -1,0 +1,15 @@
+<td data-ng-bind="'ADDRESS.ID' | translate"></td>
+<td data-ng-bind="'ADDRESS.STREET' | translate">
+    <span data-ng-click="order = 'name'" class="glyphicon glyphicon-menu-up"></span>
+    <span data-ng-click="order = '-name'" class="glyphicon glyphicon-menu-down"></span>
+</td>
+<td data-ng-bind="'ADDRESS.NEIGHBORHOOD' | translate">
+    <span data-ng-click="order = 'email'" class="glyphicon glyphicon-menu-up" ></span>
+    <span data-ng-click="order = '-email'" class="glyphicon glyphicon-menu-down" ></span>
+</td>
+<td data-ng-bind="'ADDRESS.PHONE_NUMBER' | translate"></td>
+
+<th class="action-column">{{ 'ADDRESS.ACTION_NEW' | translateField }}</th>
+
+<th class="action-column">{{ 'ADDRESS.ACTION_EDIT' | translateField }}</th>
+<th class="action-column">{{ 'ADDRESS.ACTION_REMOVE' | translateField }}</th>

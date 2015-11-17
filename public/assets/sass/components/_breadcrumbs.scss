@@ -1,0 +1,15 @@
+.breadcrumbs {
+    margin: em(15) 0 em(50) 0;
+    padding: em(15);
+    display: block;
+    background-color: #ee6e73;
+    width: 100%;
+
+    a {
+        font-size: em(18);
+        color: $default-color-text;
+        text-transform: capitalize;
+        text-shadow: 2px 2px #FF0000;
+        font-style: italic;
+    }
+}

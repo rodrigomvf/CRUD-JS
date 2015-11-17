@@ -1,0 +1,62 @@
+{
+  "HOME": "CRUD-JS",
+  "WELCOME": "Bem vindo",
+  "LOGOUT": "Sair",
+  "DASHBOARD": "Principal",
+  "SAVE": "Salvar",
+  "CANCEL": "Cancelar",
+  "DELETE": "Deletar",
+  "CONFIGURATION_START": {
+      "TITLE": "CRUD-JS",
+      "DESCRIPTION": "CRUD-JS description"
+  },
+  "ADDRESS": {
+    "ID": "ID",
+    "STREET": "Rua",
+    "NEIGHBORHOOD": "Bairro",
+    "PHONE_NUMBER": "Numero do Telefone",
+    "ACTION_EDIT": "Editar",
+    "ACTION_REMOVE": "Remover",
+    "ACTION_NEW": "Novo"
+  },
+  "BREADCRUMB": {
+      "USER": {
+          "USER": "Usuários /",
+          "LIST": "lista",
+          "EDIT": "Editar",
+          "NEW": "Novo"
+      },
+      "LOGIN": {
+        "LIST": "",
+        "EDIT": "",
+        "NEW": ""
+      }
+  },
+  "USER": {
+    "STREET": "Rua",
+    "NEIGHBORHOOD": "Bairro",
+    "TELEPHONE": "Telefone",
+    "PLACEHOLDER": {
+        "STREET" : "Digite seu endereço aqui",
+        "NEIGHBORHOOD": "Digite seu Bairro",
+        "TELEPHONE": "Digite seu Telefone"
+    }
+  },
+  "LOGIN": {
+    "NAME": "Nome:",
+    "CPF": "Bairro:",
+    "BIRTHDAY": "Data de Nascimento:",
+    "PASSWORD": "Senha:",
+    "CONFIRM_PASSWORD": "Confirme sua senha",
+    "TITLE_CREATE_LOGIN":"Cria sua conta agora",
+    "TITLE_LOGIN": "Enviar",
+    "PLACEHOLDER": {
+      "NAME" : "Digite seu nome aqui",
+      "CPF": "Digite seu CPF aqui",
+      "BIRTHDAY": "Digite sua data de nascimento",
+      "PASSWORD": "Digite sua senha",
+      "CONFIRM_PASSWORD": "Confirme sua senha aqui",
+      "LOGIN": "Login"
+    }
+  }
+}

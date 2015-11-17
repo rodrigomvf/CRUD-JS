@@ -1,0 +1,15 @@
+<div class="inline-form form-group no-margin-hr panel-padding-h no-border-t">
+    <label for="id" class="{{ labelSize ? 'col-sm-' + labelSize : 'col-sm-3' }} control-label">{{ 'ID' }}</label>
+    <div class="col-sm-2">
+        <input
+            ng-disabled="true"
+            cp-dynamic-model="model"
+            cp-dynamic-name="fields"
+            max="50"
+            type="text"
+            class="form-control"
+            id="id"
+            style="min-width: 100px;">
+        <p class="help-block">{{ help | translateField }}</p>
+    </div>
+</div>

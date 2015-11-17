@@ -1,0 +1,35 @@
+.input {
+    display: block;
+    width: 100%;
+    padding: em(10);
+    margin: 0.4em 0;
+    //font-family: $font-family-bold-italic;
+    //color: $default-color-text;
+    //border: 1px solid $default-color-text;
+    z-index: 0;
+    background: transparent;
+    @include border-radius(none);
+    @include input-placeholder {
+        //color: $default-color-text;
+    }
+}
+
+.input-android {
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 45px;
+}
+
+
+//input[type="text"] {
+//  @include input-placeholder {
+//    color: #000;
+//  }
+//}

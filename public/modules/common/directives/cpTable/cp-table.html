@@ -1,0 +1,32 @@
+<table class="table striped">
+    <thead ng-include="'modules/common/directives/cpTable/header/header.html'"></thead>
+    <tbody>
+        <tr ng-include="'modules/common/directives/cpTable/serach/search.html'"></tr>
+        <!--<tr ng-repeat="person in address" ng-include="'body/body.html'"></tr>-->
+
+        <tr ng-repeat="register in registers">
+
+            <td>{{register._id}}</td>
+            <td>{{register.street}}</td>
+            <td>{{register.neighborhood}}</td>
+            <td>{{register.telephone}}</td>
+
+            <td>
+                <button class="btn-small" ng-click="newRegister()">
+                    <i class="fa fa-plus"></i>
+                </button>
+            </td>
+            <td>
+                <button class="btn-small" ng-click="editRegister(register)">
+                    <i class="fa fa-pencil"></i>
+                </button>
+            </td>
+            <td>
+                <button class="btn-small" ng-click="confirmReg(person)">
+                    <i class="fa fa-trash-o"></i>
+                </button>
+            </td>
+
+        </tr>
+    </tbody>
+</table>

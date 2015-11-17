@@ -1,0 +1,48 @@
+<h1 class="text-center">Login in CRUD-JS</h1>
+
+<form
+    ng-submit="submit(register.$valid)"
+    name="register"
+    class="form-sign-in"
+    novalidate>
+
+    <cp-input
+        type="text"
+        placeholder="LOGIN.PLACEHOLDER.LOGIN"
+        model="login.login"
+        required="true"
+        class-input="input-android"
+        max-length="50">
+    </cp-input>
+
+    <cp-input
+        type="password"
+        placeholder="LOGIN.PLACEHOLDER.PASSWORD"
+        model="login.password"
+        required="true"
+        class-input="input-android"
+        max-length="9">
+    </cp-input>
+
+    <cp-input
+        type="password"
+        placeholder="LOGIN.PLACEHOLDER.CONFIRM_PASSWORD"
+        model="login.confirm_password"
+        required="true"
+        class-input="input-android"
+        max-length="9">
+    </cp-input>
+
+    <cp-save
+        show-save="true"
+        model="new"
+        class-save="btn-block"
+        title-save="LOGIN.TITLE_LOGIN"
+        path="user/list">
+    </cp-save>
+
+    <p>
+        Don't have an account?
+        <a href="#/login/new">Create a CRUD-JS account</a>
+    </p>
+</form>

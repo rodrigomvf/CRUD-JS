@@ -1,0 +1,54 @@
+// =============================================================================
+//  CSS FOR PRINT
+// =============================================================================
+
+// you can definer an element avoid for add break in points specifics your page
+.page-break {
+    display: none;
+}
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a {
+        text-decoration: underline !important;
+    }
+
+    a::after {
+        content: '(' attr(href) ')';
+        margin-left: 2px;
+    }
+
+    // show path link after text element
+    a[href]::after {
+        content: '(' attr(href) ')';
+    }
+
+    // hide links without an url
+    a[href^='javascript:']::after, a[href^='#']::after {
+        content: '';
+    }
+
+    .page-break {
+        display: block;
+        page-break-before: always;
+    }
+
+    // content from paragraph is not break in twice pages
+    p {
+        page-break-inside: avoid;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        border-color: #000;
+    }
+}

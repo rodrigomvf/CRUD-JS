@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'IconicFill';
+    src: url('../fonts/icons/fontello.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon-next::after {
+    content: '\e800';
+    font-family: 'IconicFill';
+    margin-left: 10px;
+}
+
+.icon-ok:before { content: '\e800'; }
+
+.icon-invalid {
+    color: #990000;
+}
+
+.icon-invalid:before {
+    // content
+    // font-family
+    // margin
+}
+
+

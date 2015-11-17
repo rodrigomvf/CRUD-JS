@@ -1,0 +1,66 @@
+<h1 class="text-center">Create a CRUD-JS Account</h1>
+
+<form
+    ng-submit="submit(register.$valid)"
+    name="register"
+    class="form-sign-in"
+    novalidate>
+
+    <cp-input
+        type="text"
+        placeholder="LOGIN.PLACEHOLDER.NAME"
+        model="login.name"
+        required="true"
+        class-input="input-android"
+        max-length="50">
+    </cp-input>
+
+    <cp-input
+        type="text"
+        placeholder="LOGIN.PLACEHOLDER.CPF"
+        model="login.cpf"
+        required="true"
+        class-input="input-android"
+        max-length="30">
+    </cp-input>
+
+    <cp-input
+        type="date"
+        placeholder="LOGIN.PLACEHOLDER.BIRTHDAY"
+        model="login.birthday"
+        required="true"
+        class-input="input-android"
+        max-length="9">
+    </cp-input>
+
+    <cp-input
+        type="password"
+        placeholder="LOGIN.PLACEHOLDER.PASSWORD"
+        model="login.password"
+        required="true"
+        class-input="input-android"
+        max-length="9">
+    </cp-input>
+
+    <cp-input
+        type="password"
+        placeholder="LOGIN.PLACEHOLDER.CONFIRM_PASSWORD"
+        model="login.confirm_password"
+        required="true"
+        class-input="input-android"
+        max-length="9">
+    </cp-input>
+
+    <cp-save
+        show-save="true"
+        model="new"
+        class-save="btn-block btn-success"
+        title-save="LOGIN.TITLE_CREATE_LOGIN"
+        path="user/list">
+    </cp-save>
+
+    <p>
+        Already have an account ?
+        <a href="#/login/">Log in</a>
+    </p>
+</form>

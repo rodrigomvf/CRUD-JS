@@ -1,0 +1,32 @@
+// scottnix.com/placement-of-media-queries/
+
+@mixin breakpoint($point) {
+    @if $point == medium {
+        @media (min-width: 30em)  { @content; }
+    }
+    @else if $point == large {
+        @media (min-width: 50em) { @content; }
+    }
+    @else if $point { // allows custom breakpoints
+        @media (min-width: $point) { @content; }
+    }
+}
+
+// http://www.sitepoint.com/sass-mixin-placeholder/
+
+// =========================
+//  .icon {
+//      @include size(32px);
+//  }
+// =========================
+
+// =============================
+//  .cover {
+//    @include size(100%, 10em);
+//  }
+// =============================
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}

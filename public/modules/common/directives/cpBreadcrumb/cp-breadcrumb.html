@@ -1,0 +1,12 @@
+<div data-breadcrumbs class="breadcrumbs {{classBread}}" data-ng-if="breadcrumbs.length !== 0">
+    <a
+        data-ng-repeat="breadcrumb in breadcrumbs"
+        data-ui-sref="{{breadcrumb.stateName}}">
+        <span
+            data-ng-if="breadcrumb.text"
+            data-ng-bind="breadcrumb.text | translateField">
+        </span>
+    </a>
+</div>
+
+

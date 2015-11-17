@@ -1,0 +1,41 @@
+// =============================================================================
+//  VARIABLES
+// =============================================================================
+$red-color				    								       : #ffe5e5;
+$green-color            									       : #e6ffe6;
+
+.container-message-crud-js {
+    @extend %center-containers;
+}
+
+.message-default {
+    margin: em(25) auto;
+    border: 1px solid $default-color-text;
+    padding: em(15);
+    @include border-radius(6px);
+}
+
+.message-important {
+    @extend .message-default;
+    background-color: $red-color;
+    border-color: desaturate(darken($red-color, 25%), 50%);
+}
+
+.message-success {
+    @extend .message-default;
+    background-color: $green-color;
+    border-color: desaturate(darken($green-color, 25%), 50%);
+}
+
+.message-warning {
+    @extend .message-default;
+    background-color: $red-color;
+    border-color: desaturate(darken($green-color, 25%), 50%);
+}
+
+.message-hidden {
+    display: none;
+}
+
+//.warning
+

@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+	- 0.10
+notifications:
+	- astesiojose@gmail.com
+before_install:
+	- npm install -g bower
+	- npm install -g grunt-cli
+	- npm install -g karma-cli
+	- npm install -g protractor
+	- npm install -g webdriver-manager update
+	- bower install
+before_script:
+	- grunt
+	- cd staging

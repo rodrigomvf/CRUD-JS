@@ -1,0 +1,17 @@
+header {
+    background: $default-background-color-header;
+    padding: em(10);
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+
+    h1 {
+        text-transform: uppercase;
+        color: #797979;
+        font-weight: $font-weight-default;
+        font-size: em(38);
+    }
+}

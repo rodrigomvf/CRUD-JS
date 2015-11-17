@@ -1,0 +1,50 @@
+// =============================================================================
+//  HTML & BODY
+// =============================================================================
+
+html {
+    @include box-sizing(border-box);
+}
+
+// =============================================================================
+//  BOX SIZING AND CLEARFIX
+// =============================================================================
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    @include box-sizing(border-box);
+    @include transition(color .3s ease-in-out, background .3s ease-in-out);
+}
+
+.clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+body {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: $text-size-adjust-default;
+    font-weight: $font-weight-default;
+    line-height: $line-height-medium;
+    -webkit-text-size-adjust: $text-size-adjust-default;
+    padding-top: em(58);
+}
+
+img {
+    // This case is important because when image is great she no great when
+    //container is less this img adjust automatic without lost quality
+    max-width: 100%;
+}
+
+// =============================================================================
+//  CONTAINER ALL SITE
+// =============================================================================
+
+.container-crud-js {
+    @extend %center-containers;
+}

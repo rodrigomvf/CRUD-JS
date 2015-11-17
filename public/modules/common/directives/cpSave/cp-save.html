@@ -1,0 +1,18 @@
+<button
+    ng-if="showSave"
+    id="scroller-top"
+    ng-click="(!$parent.form.$invalid) ? save() : '';"
+    type="submit"
+    class="btn-default {{classSave}}">
+    <span ng-if="titleSave" data-ng-bind="titleSave | translateField "></span>
+    <span ng-if="!titleSave" data-ng-bind="'SAVE' | translateField "></span>
+</button>
+
+<button
+    ng-if="showCancel"
+    ng-click="cancel()"
+    type="submit"
+    class="btn-default {{classCancel}}">
+    <span ng-if="titleCancel" data-ng-bind="titleSave | translateField "></span>
+    <span ng-if="!titleCancel" data-ng-bind="'CANCEL' | translateField "></span>
+</button>

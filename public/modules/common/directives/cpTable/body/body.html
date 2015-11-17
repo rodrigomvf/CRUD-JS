@@ -1,0 +1,15 @@
+<td>{{ $index }}</td>
+<td>{{person.street}}</td>
+<td>{{person.neighborhood}}</td>
+<td>{{person.telephone}}</td>
+
+<td>
+    <button class="btn-small" ng-click="editRegister(person)">
+        <i class="fa fa-pencil"></i>
+    </button>
+</td>
+<td>
+    <button class="btn-small" ng-click="confirmReg(person)">
+        <i class="fa fa-trash-o"></i>
+    </button>
+</td>

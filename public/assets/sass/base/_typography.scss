@@ -1,0 +1,56 @@
+// =============================================================================
+//  HEADINGS
+// =============================================================================
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: $line-height-small;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+h1 {
+    font-size: em($font-size-large);
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+h2 {
+    font-size: em($font-size-medium);
+}
+
+// =============================================================================
+//  TEXT
+// =============================================================================
+
+p {
+    font-size: em(18);
+    font-family: "Times New Roman", Georgia, Serif;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-felt {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.help-block {
+    font-style: italic;
+    color: red !important;
+    padding-left: em(10);
+}

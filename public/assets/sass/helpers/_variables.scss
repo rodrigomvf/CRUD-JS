@@ -1,0 +1,27 @@
+// =============================================================================
+//  COLOURS, BACKGROUND AND FONTS BODY DEFAULT
+// =============================================================================
+
+$default-background-color		   	                                             : #000000;
+$default-color-text                      	                                     : #FFFFFF;
+$default-background-color-header           	                                     : #4D4D4D;
+$font-size-small																 : 16;
+$font-size-medium																 : 22;
+$font-size-large																 : 36;
+$font-weight-default															 : 300;
+$line-height-small																 : 1;
+$line-height-medium 															 : 1.3;
+$line-height-large   															 : 1.6;
+$text-size-adjust-default														 : 100%;
+$default-max-width                                                               : 1170px;
+
+
+// =============================================================================
+//  MEDIA QUERIES
+// =============================================================================
+$break-small-old                                                                  : 320;
+$break-small                                                                      : 360;
+$break-middle                                                                     : 600;
+$break-large                                                                      : 768;
+$orientation-portrait                                                             : portrait;
+$orientation-landscape                                                            : portrait;

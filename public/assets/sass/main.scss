@@ -1,0 +1,43 @@
+// bower:scss
+// endbower
+
+// Sass utilities
+@import "helpers/utils";
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+@import "helpers/placeholders";
+
+// Vendors and external stylesheets
+@import "vendors/angular-animation";
+
+// Base stuff
+@import "base/reset";
+@import "base/base";
+@import "base/typography";
+
+// Components and modules
+@import "components/breadcrumbs";
+@import "components/icons";
+@import "components/buttons";
+@import "components/messages";
+@import "components/inputs";
+@import "components/searchs";
+@import "components/table";
+
+// Page-specific stylesheets
+@import "layout/header";
+@import "layout/footer";
+
+// Page-specific stylesheets
+@import "pages/register";
+@import "pages/list";
+@import "pages/edit";
+@import "pages/new";
+@import "pages/delete";
+
+// Media Queries
+@import "responsive/media-queries";
+
+// Base stuff
+@import "base/print";

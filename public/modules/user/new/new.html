@@ -1,0 +1,42 @@
+<form
+    ng-submit="submit(register.$valid)"
+    name="register"
+    class="form-sign-in"
+    novalidate>
+
+    <cp-input
+        type="text"
+        placeholder="USER.PLACEHOLDER.STREET"
+        model="user.street"
+        required="true"
+        class-input="input-android"
+        max-length="50">
+    </cp-input>
+
+    <cp-input
+        type="text"
+        placeholder="USER.PLACEHOLDER.NEIGHBORHOOD"
+        model="user.neighborhood"
+        required="true"
+        class-input="input-android"
+        max-length="30">
+    </cp-input>
+
+    <cp-input
+        type="tel"
+        placeholder="USER.PLACEHOLDER.TELEPHONE"
+        model="user.telephone"
+        required="true"
+        class-input="input-android"
+        max-length="9">
+    </cp-input>
+
+    <cp-save
+        show-save="true"
+        show-cancel="true"
+        class-save="btn-primary"
+        class-cancel="btn-danger"
+        model="user"
+        path="user">
+    </cp-save>
+</form>

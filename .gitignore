@@ -1,6 +1,29 @@
+../node_modules/grunt-contrib-cssmin/node_modules
+.npm-debug
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.sublime-workspace
+*.idea
+.svn/
+.tmp
+build/*
+staging/*
+*.zip
+
+### Node ###
 # Logs
 logs
 *.log
+npm-debug.log*
 
 # Runtime data
 pids
@@ -23,5 +46,21 @@ coverage
 build/Release
 
 # Dependency directory
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules
+
+### Sass ###
+.sass-cache/
+*.css.map
+
+### Linux ###
+*~
+
+# KDE directory preferences
+.directory
+
+# Linux trasher whi foldch might appear on any partition or disk
+.Trash-*
+nohup.out
+nohup.log
+ssh.out
