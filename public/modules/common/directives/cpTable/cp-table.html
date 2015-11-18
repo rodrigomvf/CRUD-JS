@@ -4,12 +4,12 @@
         <tr ng-include="'modules/common/directives/cpTable/serach/search.html'"></tr>
         <!--<tr ng-repeat="person in address" ng-include="'body/body.html'"></tr>-->
 
-        <tr ng-repeat="register in registers">
+        <tr ng-repeat="rgt in register">
 
-            <td>{{register._id}}</td>
-            <td>{{register.street}}</td>
-            <td>{{register.neighborhood}}</td>
-            <td>{{register.telephone}}</td>
+            <td>{{rgt._id}}</td>
+            <td>{{rgt.street}}</td>
+            <td>{{rgt.neighborhood}}</td>
+            <td>{{rgt.telephone}}</td>
 
             <td>
                 <button class="btn-small" ng-click="newRegister()">
@@ -17,7 +17,7 @@
                 </button>
             </td>
             <td>
-                <button class="btn-small" ng-click="editRegister(register)">
+                <button class="btn-small" ng-click="editRegister(rgt)">
                     <i class="fa fa-pencil"></i>
                 </button>
             </td>

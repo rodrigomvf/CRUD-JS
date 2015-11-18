@@ -1,6 +1,9 @@
 (function () {
 
-    var UserListController = function ($scope) {
+    var UserListController = function ($scope, UserServiceQuery) {
+        UserServiceQuery.get(function(data) {
+            $scope.test = data;
+        });
 
         //$scope.address = [];
 

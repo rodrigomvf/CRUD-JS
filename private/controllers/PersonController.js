@@ -1,23 +1,26 @@
 (function () {
     'use strict';
 
-    var persons = [
+    var persons =
         {   _id: 1,
             name: 'Contact example 1',
             cpf: '000.000.000-00',
             birthday: '09-05-1989',
             address: [
                 {
+                    _id: 1,
                     street: 'Rua carijos',
                     neighborhood: 'Bom Cidade',
                     telephone: '99184-9826'
                 },
                 {
+                    _id: 2,
                     street: 'Rua aimoressss',
                     neighborhood: 'Bom Jarerdim',
                     telephone: '99184-9826'
                 },
                 {
+                    _id: 3,
                     street: 'Rua aimoresdfdf',
                     neighborhood: 'Bom Jardim',
                     telephone: '99184-9826'
@@ -26,8 +29,7 @@
             login: 'astesio',
             password: 'teste1'
 
-        }
-    ];
+        };
 
     var PersonController = function (app) {
         var jwt         = require('jsonwebtoken'),

@@ -16,42 +16,21 @@
                 model: '@'
             },
             controller: function($rootScope, $scope, $injector, $location, $translate, $timeout, $filter, $parse, $stateParams) {
-                $scope.registers = [];
-                //$scope.registers = {};
-                //$scope.factory = $injector.get($scope.factoryName);
 
-                var persons = [
-                    {
-                        "_id": "1",
-                        "name" : "Astesio Jose do Carmo Junior",
-                        "cpf": "000.000.000-00",
-                        "birthday": "1989-05-09",
-                        "address": [
-                            {
-                                "_id": "1",
-                                "street": "Aimores 41",
-                                "neighborhood": "Bom Jaridim",
-                                "telephone": "991949826"
-                            },
-                            {
-                                "_id": "2",
-                                "street": "Pernambuco 76",
-                                "neighborhood": "Florestal",
-                                "telephone": "37124692"
-                            }
-                        ]
-                    }
-                ];
+                $scope.registers = {};
+                $scope.register = [];
 
-                //$scope.loadingPromise = $scope.factory.query(function (success) {
-                //        $scope.registers = success;
-                //});
+                $scope.factory = $injector.get($scope.factoryName);
 
-                angular.forEach(persons, function (value, key) {
-                    angular.forEach(value.address, function (value, key) {
-                        $scope.registers.push(value);
-                    });
+
+                $scope.loadingPromise = $scope.factory.query(function (success) {
+                        $scope.registers = success;
+
+                        angular.forEach($scope.registers.address, function (value, key) {
+                            $scope.register.push(value);
+                        });
                 });
+
 
                 $scope.newRegister = function() {
                     $location.path('/'+ $scope.appPath + '/new');

@@ -12,7 +12,8 @@
         'pascalprecht.translate',
         'ui.bootstrap',
         'ui.router.breadcrumbs',
-        'angular-ladda'
+        'angular-ladda',
+        'ngStorage'
 	]);
 
 })();
