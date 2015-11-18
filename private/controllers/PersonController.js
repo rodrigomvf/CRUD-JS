@@ -126,26 +126,26 @@
         };
 
 
-        //person.savePerson = function (request, response) {
-        //    var _id = request.body._id;
-        //    if (_id) {
-        //        PersonModel.findByIdAndUpdate(_id, request.body).exec()
-        //            .then(function (personUpdate) {
-        //                response.json(personUpdate);
-        //            }, function (error) {
-        //                console.error(error);
-        //                response.status(500).json(error);
-        //            });
-        //    } else {
-        //        PersonModel.create(request.body)
-        //            .then(function (personCreate) {
-        //                response.status(201).json(personCreate);
-        //            }, function (error) {
-        //                console.log(error);
-        //                response.status(500).json(error);
-        //            });
-        //    }
-        //};
+        person.savePerson = function (request, response) {
+            var _id = request.body._id;
+            if (_id) {
+                PersonModel.findByIdAndUpdate(_id, request.body).exec()
+                    .then(function (personUpdate) {
+                        response.json(personUpdate);
+                    }, function (error) {
+                        console.error(error);
+                        response.status(500).json(error);
+                    });
+            } else {
+                PersonModel.create(request.body)
+                    .then(function (personCreate) {
+                        response.status(201).json(personCreate);
+                    }, function (error) {
+                        console.log(error);
+                        response.status(500).json(error);
+                    });
+            }
+        };
 
         person.removeAddress =  function (request, response) {
             var _id = request.params.id;

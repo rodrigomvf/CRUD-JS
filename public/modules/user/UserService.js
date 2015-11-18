@@ -1,5 +1,19 @@
 (function () {
 
+    var UserService = function ($resource, BASE_REST_URL) {
+        return $resource(BASE_REST_URL + 'person', {}, {
+            update: {
+                method: 'PUT'
+            },
+            query: {
+                isArray: false
+            },
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+            }
+        });
+    };
+
     var UserServiceQuery = function ($resource, BASE_REST_URL) {
         return $resource(BASE_REST_URL + 'person', {}, {
             update: {
@@ -31,6 +45,7 @@
     };
 
     angular.module('CRUD-JS.User')
+        .service('UserService', UserService)
         .service('UserServiceQuery', UserServiceQuery)
         .service('UserServiceSingle', UserServiceSingle);
 })();

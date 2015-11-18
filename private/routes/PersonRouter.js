@@ -14,7 +14,8 @@
             .get(person.ensureAuthorized, person.getAddress);
 
         app.route('/person')
-            .get(person.getAddress);
+            .get(person.getAddress)
+            .post(person.savePerson);
 
         app.route('/person/:id')
             .delete(person.removeAddress);
