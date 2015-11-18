@@ -15,6 +15,7 @@
                         'modules/common/directives/cpHeader/cpHeader.js',
                         'modules/common/directives/cpCompareTo/cpCompareTo.js',
                         'modules/common/directives/cpDynamic/cpDynamic.js',
+                        'modules/common/services/GridMessages.js',
                         'modules/common/filters/translateField.js',
                         'modules/common/directives/cpInput/cpInput.js',
                         'modules/common/directives/cpTable/cpTable.js',

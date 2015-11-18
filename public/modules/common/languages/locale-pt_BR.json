@@ -9,7 +9,13 @@
   "MESSAGE": {
       "REQUIRED": {
           "NAME": "O campo nome e de preenchimento obrigatorio."
-      }
+      },
+      "NEW_SUCCESS":"Registro salvo com sucesso.",
+      "UPDATE_SUCCESS": "Registro atualizado com sucesso.",
+      "NEW_FAILURE": "Falha ao inserir o novo registro.",
+      "UPDATE_FAILURE": "Falha ao atualizar o registro.",
+      "DELETE_SUCCESS": "Registro deletado com sucesso.",
+      "DELETE_FAILURE": "Falha ao deletar o registro."
   },
   "CONFIGURATION_START": {
       "TITLE": "CRUD-JS",

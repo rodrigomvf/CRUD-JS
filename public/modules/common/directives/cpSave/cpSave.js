@@ -19,7 +19,7 @@
                 disabled: '@',
                 factoryName: '@'
             },
-            controller: function($scope, $stateParams, $location, $injector) {
+            controller: function($scope, $stateParams, $location, $injector, $translate, MessageGrid) {
                 var $parent = $scope.$parent;
                 $scope.isEdition = $stateParams.id !== undefined;
 
@@ -31,18 +31,20 @@
                     $scope.factory = $injector.get($scope.factoryName);
                     if ($scope.isEdition) {
                          $scope.factory.update($parent[$scope.model], function() {
-                            console.log($parent[$scope.model].id);
+                            new MessageGrid('success', 'OKAY :)', $translate.instant('MESSAGE.UPDATE_SUCCESS') + ' ' + $parent[$scope.model]._id);
                             $location.path('/' + $scope.path + '/list');
-                        }, function() {
-                            console.log($parent[$scope.model].id);
+                        }, function(error) {
+                             console.log(error);
+                             new MessageGrid('warning', 'OPS :(', $translate.instant('MESSAGE.UPDATE_FAILURE') + ' ' + error);
                             $location.path('/' + $scope.path);
                         });
                     } else {
                         $scope.factory.save($parent[$scope.model], function(success) {
-                            console.log(success.id);
+                            new MessageGrid('success', 'OKAY :)', $translate.instant('MESSAGE.NEW_SUCCESS') + ' ' + success._id);
                             $location.path('/' + $scope.path);
                         }, function(error) {
                             console.log(error);
+                            new MessageGrid('warning', 'OPS :(', $translate.instant('MESSAGE.NEW_FAILURE') + ' ' + error);
                         });
                     }
                 };

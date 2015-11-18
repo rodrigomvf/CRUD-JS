@@ -1,1 +1,8 @@
+<div
+    ng-if="messages.show"
+    class="message-{{messages.type}}">
+    <strong data-ng-bind="messages.title"></strong>
+    <span data-ng-bind="messages.description"></span>
+</div>
+
 <div data-ui-view></div>

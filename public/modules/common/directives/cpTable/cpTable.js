@@ -15,7 +15,7 @@
                 remove: '@',
                 model: '@'
             },
-            controller: function($rootScope, $scope, $injector, $location, $translate, $timeout, $filter, $parse, $stateParams) {
+            controller: function($rootScope, $scope, $injector, $location, $translate, $timeout, $filter, $parse, $stateParams, MessageGrid) {
 
                 $scope.registers = {};
                 $scope.register = [];
@@ -46,10 +46,11 @@
                     $scope.factoryDelete.delete({
                         id: register._id
                     }).$promise.then(function(data) {
-                            console.log('Você deletou o registro ' + register._id);
+                            new MessageGrid('success', 'OKAY :)', $translate.instant('MESSAGE.DELETE_SUCCESS') + ' ' + register._id);
                         },
                         function(error) {
-                           console.log(error);
+                            new MessageGrid('warning', 'OPS :(', $translate.instant('MESSAGE.DELETE_FAILURE') + ' ' + register._id);
+                            console.log(error);
                         });
                 };
 
