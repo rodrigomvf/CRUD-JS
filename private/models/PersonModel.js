@@ -1,11 +1,11 @@
 (function () {
+
     'use strict';
 
-    var mongoose = require('mongoose');
+    var PersonModel = function () {
+        var mongoose = require('mongoose');
 
-    module.exports = function () {
-
-        var scheme = mongoose.Schema({
+        var PersonScheme   = mongoose.Schema({
             name: {
                 type: String,
                 required: true
@@ -21,11 +21,15 @@
             address: {
                 type: Array,
                 required: true
-            }
+            },
+            login: String,
+            password: String,
+            token: String
         });
 
-        return mongoose.model('Person', scheme);
-
+        return mongoose.model('Person', PersonScheme);
     };
+
+    module.exports = PersonModel;
 
 })();

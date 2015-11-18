@@ -6,6 +6,11 @@
   "SAVE": "Salvar",
   "CANCEL": "Cancelar",
   "DELETE": "Deletar",
+  "MESSAGE": {
+      "REQUIRED": {
+          "NAME": "O campo nome e de preenchimento obrigatorio."
+      }
+  },
   "CONFIGURATION_START": {
       "TITLE": "CRUD-JS",
       "DESCRIPTION": "CRUD-JS description"

@@ -1,8 +1,18 @@
 (function () {
     'use strict';
 
-    var LoginService = function () {
-
+    var LoginService = function ($resource, BaseRestUrl) {
+        return $resource(BaseRestUrl + '/signin', {}, {
+            update: {
+                method: 'POST'
+            },
+            query: {
+                isArray: false
+            },
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+            }
+        });
     };
 
     angular.module('CRUD-JS.Login')

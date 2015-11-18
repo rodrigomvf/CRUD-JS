@@ -15,24 +15,8 @@
     data-ng-class="{'': !$parent.submitted, 'validate-fields': $parent.submitted && $parent.form[model].$error.required}"
     />
 
-        <div class="has-error has-error-margin-top-general" ng-show="$parent.submitted && $parent.form.$invalid">
-            <p class="help-block" ng-show="$parent.form[model].$error.required">
-                {{requiredMessage | translateField}}
-            </p>
-        </div>
-
-        <div class="has-error has-error-margin-top-general" ng-show="$parent.form[model].$error[customError]">
-            <p class="help-block" ng-show="$parent.form[model].$error[customError]">
-                {{customErrorMessage | translateField}}
-            </p>
-        </div>
-
-        <div class="has-error has-error-margin-top-general" ng-show="$parent.form[model].$error.pattern">
-            <p class="help-block" ng-show="$parent.form[model].$error.pattern">
-                {{patternErrorMessage | translateField}}
-            </p>
-        </div>
-
-    <div class="col-sm-9 {{ labelSize ? 'col-sm-offset-' + labelSize : 'col-sm-offset-3' }}">
-        <label for="{{model}}" class="help-block" data-ng-bind="help | translateField"></label>
+    <div class="has-error has-error-margin-top-general" ng-show="$parent.submitted && $parent.form.$invalid">
+        <p class="help-block" ng-show="$parent.form[model].$error.required">
+            {{requiredMessage | translateField}}
+        </p>
     </div>

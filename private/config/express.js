@@ -17,7 +17,7 @@
         app.use(function (request, response, next) {
             response.header('Access-Control-Allow-Origin', '*');
             response.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-            response.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+            response.header('Access-Control-Allow-Headers', 'X-Requested-With,content-type, Authorization');
 
             next();
         });

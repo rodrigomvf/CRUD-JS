@@ -16,9 +16,10 @@
                 showCancel: '@',
                 redirectToEdit: '@',
                 click: '@',
-                disabled: '@'
+                disabled: '@',
+                factoryName: '@'
             },
-            controller: function($scope, $stateParams, $location) {
+            controller: function($scope, $stateParams, $location, $injector) {
                 var $parent = $scope.$parent;
                 $scope.isEdition = $stateParams.id !== undefined;
 

@@ -12,6 +12,7 @@
         model="login.name"
         required="true"
         class-input="input-android"
+        required-message="MESSAGE.REQUIRED.NAME"
         max-length="50">
     </cp-input>
 
@@ -52,6 +53,7 @@
     </cp-input>
 
     <cp-save
+        factory-name="LoginService"
         show-save="true"
         model="new"
         class-save="btn-block btn-success"

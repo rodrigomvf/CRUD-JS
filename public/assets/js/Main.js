@@ -8,6 +8,7 @@
         'cgBusy',
         'ngMessages',
         'ngSanitize',
+        'ngResource',
         'pascalprecht.translate',
         'ui.bootstrap',
         'ui.router.breadcrumbs',
