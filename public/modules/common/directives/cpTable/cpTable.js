@@ -24,11 +24,11 @@
 
 
                 $scope.loadingPromise = $scope.factory.query(function (success) {
-                        $scope.registers = success;
+                    $scope.registers = success;
 
-                        angular.forEach($scope.registers.address, function (value, key) {
-                            $scope.register.push(value);
-                        });
+                    angular.forEach($scope.registers.address, function (value, key) {
+                        $scope.register.push(value);
+                    });
                 });
 
 

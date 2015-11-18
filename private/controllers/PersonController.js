@@ -146,6 +146,18 @@
         //            });
         //    }
         //};
+
+        person.removeAddress =  function (request, response) {
+            var _id = request.params.id;
+            PersonModel.remove({'_id': _id}).exec()
+                .then(function () {
+                    response.end();
+                }, function (error) {
+                    console.error(error);
+                });
+        };
+
+
         return person;
     };
 

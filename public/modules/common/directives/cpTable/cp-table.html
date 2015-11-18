@@ -1,4 +1,4 @@
-<table class="table striped">
+<table class="table striped" cg-busy="{promise: loadingPromise, message: 'Aguarde...'}">
     <thead ng-include="'modules/common/directives/cpTable/header/header.html'"></thead>
     <tbody>
         <tr ng-include="'modules/common/directives/cpTable/serach/search.html'"></tr>
@@ -22,7 +22,7 @@
                 </button>
             </td>
             <td>
-                <button class="btn-small" ng-click="confirmReg(person)">
+                <button class="btn-small" ng-click="removeReg(rgt)">
                     <i class="fa fa-trash-o"></i>
                 </button>
             </td>

@@ -16,6 +16,9 @@
         app.route('/person')
             .get(person.getAddress);
 
+        app.route('/person/:id')
+            .delete(person.removeAddress);
+
 
     };
 
