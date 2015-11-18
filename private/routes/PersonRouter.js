@@ -13,6 +13,9 @@
         app.route('/address')
             .get(person.ensureAuthorized, person.getAddress);
 
+        app.route('/person')
+            .get(person.getAddress);
+
 
     };
 

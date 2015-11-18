@@ -94,20 +94,20 @@
         };
 
         person.getAddress = function (request, response) {
-            PersonModel.findOne({token: request.token}, function (error, user) {
-                if(error) {
-                    response.json({
-                        type: false,
-                        data: 'Error occurred: ' + error
-                    });
-                } else {
-                    response.json({
-                        type: true,
-                        data: user
-                    });
-                }
-            });
-            //response.json(persons);
+            //PersonModel.findOne({token: request.token}, function (error, user) {
+            //    if(error) {
+            //        response.json({
+            //            type: false,
+            //            data: 'Error occurred: ' + error
+            //        });
+            //    } else {
+            //        response.json({
+            //            type: true,
+            //            data: user
+            //        });
+            //    }
+            //});
+            response.json(persons);
         };
 
         person.ensureAuthorized = function (request, response, next) {

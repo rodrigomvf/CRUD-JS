@@ -13,10 +13,12 @@
                 appPath: '@',
                 edit: '@',
                 remove: '@',
-                model: '@',
+                model: '@'
             },
-            controller: function($scope, $injector, $location) {
+            controller: function($rootScope, $scope, $injector, $location, $translate, $timeout, $filter, $parse, $stateParams) {
                 $scope.registers = [];
+                //$scope.registers = {};
+                //$scope.factory = $injector.get($scope.factoryName);
 
                 var persons = [
                     {
@@ -40,6 +42,10 @@
                         ]
                     }
                 ];
+
+                //$scope.loadingPromise = $scope.factory.query(function (success) {
+                //        $scope.registers = success;
+                //});
 
                 angular.forEach(persons, function (value, key) {
                     angular.forEach(value.address, function (value, key) {

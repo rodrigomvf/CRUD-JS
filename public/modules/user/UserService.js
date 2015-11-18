@@ -1,7 +1,7 @@
 (function () {
 
     var UserServiceQuery = function ($resource, BaseRestUrl) {
-        return $resource(BaseRestUrl + 'address', {}, {
+        return $resource(BaseRestUrl + '/person', {}, {
             update: {
                 method: 'GET'
             },
