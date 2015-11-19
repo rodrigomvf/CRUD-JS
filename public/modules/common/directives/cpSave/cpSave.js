@@ -17,7 +17,8 @@
                 redirectToEdit: '@',
                 click: '@',
                 disabled: '@',
-                factoryName: '@'
+                factoryName: '@',
+                preSave: '@'
             },
             controller: function($scope, $stateParams, $location, $injector, $translate, MessageGrid) {
                 var $parent = $scope.$parent;
@@ -28,6 +29,15 @@
                 };
 
                 $scope.save = function() {
+
+                    if ($scope.preSave !== undefined) {
+                        var eVal = '$parent.' + $scope.preSave + '()';
+
+                        if ($scope.$eval(eVal)) {
+                            return;
+                        }
+                    }
+
                     $scope.factory = $injector.get($scope.factoryName);
                     if ($scope.isEdition) {
                          $scope.factory.update($parent[$scope.model], function() {
@@ -52,8 +62,6 @@
             }
         };
     };
-
-
 
     angular.module('CRUD-JS')
         .directive('cpSave', cpSave);
